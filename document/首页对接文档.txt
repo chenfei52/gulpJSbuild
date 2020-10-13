@@ -1,0 +1,55 @@
+获取收银台首页信息
+/gateway/getPayMethod
+POST JSON
+
+请求参数
+{
+	"orderNum":"订单号"
+}
+
+成功返回参数
+
+{
+	"code": 0,  // 成功返回0，其他为失败
+	"msg": "Success",  // 成功返回Success，失败返回失败原因
+	"data": {
+		"payMoney": 20000,  // 金额
+		"bankMethod": ["BT", "M1", "I1"],  // 银行可用渠道 首页只显示可用渠道 对应的值的描述看最下面
+		"walletMethod": ["OV"],  // 电子钱包可用渠道
+		"storeMethod": ["FT"],  // 便利店可用渠道
+		"onMethod": "M1",  // 已经选中的渠道，如果这个值不为空，跳转到对应的银行的详情页
+		"expiryPeriod": 86384,  // 倒计时 单位：秒
+		"customerName": "Oliver"  // 姓名
+	}
+}
+
+失败返回参数
+
+{
+	"code": 1006, // 除了 0 其他都是失败
+	"msg": "Data error",  // 失败原因
+	"data": null
+}
+
+
+
+payMethod值描述
+
+bank tranfer银行以下几家
+BCA  BCA银行
+M1   Mandiri银行
+BT   Permata银行
+B1   CIMB银行
+I1   BNI银行
+VA   Maybank银行
+BRI  BRI银行
+I2   Danamon银行
+
+
+E-wallet 电子钱包以下几家
+OV   OVO电子钱包
+DANA DANA电子钱包
+
+Store 便利店以下几家
+FT   ALFAMART便利店
+DT   INDOMART便利店

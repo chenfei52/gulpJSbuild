@@ -1,0 +1,137 @@
+.bank-detail-page {
+    &.container {
+        padding-top: 20px;
+    }
+
+    .header {
+        display: flex;
+        padding: 0 24px;
+        color: #FFF;
+        font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53";
+        justify-content: space-between;
+        align-items: center;
+
+        .language {
+            display: flex;
+            align-items: center;
+            span {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .main-content {
+        padding: 23px 24px;
+        text-align: center;
+
+        & > div {
+            border-radius: 10px;
+            background-color: #FFF;
+            overflow: hidden;
+        }
+
+        .countdown-container {
+            display: flex;
+            padding-top: 39px;
+            margin-bottom: 19px;
+            justify-content: center;
+
+            & > div {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #FFF;
+                font-size: 20px;
+                font-family: effrafonabold;
+                border-radius: 4px;
+                background-image: linear-gradient(to bottom, #797979, #444444);
+            }
+
+            .icon {
+                width: 26px;
+                color: rgba(68, 68, 68, 100);
+                background-image: none;
+            }
+        }
+
+        .pay-no-name{
+            line-height: 22px;
+            color: rgba(102, 102, 102, 100);
+            font-size: 12px;
+        }
+        .pay-no{
+            margin-bottom: 23px;
+            line-height: 32px;
+            color: rgba(51, 51, 51, 100);
+            font-size: 26px;
+            font-family: effrafonabold;
+        }
+        .infos{
+            padding: 20px 0;
+            background-color: rgba(240, 240, 240, 1);
+            .item{
+                display: flex;
+                margin: 4px 0;
+                align-items: flex-start;
+                &:nth-last-child(1){
+                    margin: 8px 0;
+                }
+            }
+            .key{
+                width: 35%;
+                text-align: right;
+                color: rgba(136, 136, 136, 1);
+                font-size: 12px;
+            }
+            .value{
+                padding-left: 8px;
+                color: rgba(51, 51, 51, 100);
+                font-size: 14px;
+                &.number{
+                    color: rgba(226, 61, 14, 1);
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        .copy-container{
+            margin-top: 10px;
+            padding: 20px 30px;
+            .text{
+                line-height: 22px;
+                color: rgba(51, 51, 51, 1);
+                font-size: 16px;
+            }
+            button{
+                width: 100%;
+                height: 48px;
+                margin-top: 18px;
+                border-radius: 6px;
+                background-color: rgba(0, 71, 204, 1);
+                color: rgba(255, 255, 255, 1);
+                font-size: 14px;
+                outline: none;
+                border: none;
+            }
+        }
+
+        .list-container{
+            color: #FFF;
+            background-color: transparent;
+            .list-item .menu{
+                display: flex;
+                padding: 17px 0;
+                line-height: 19px;
+                align-items: center;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.8);
+                justify-content: space-between;
+            }
+            .halfpxline{
+                background-color: rgba(255, 255, 255, 0.1);;
+            }
+        }
+    }
+}

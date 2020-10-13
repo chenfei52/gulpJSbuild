@@ -1,0 +1,146 @@
+.bca-detail-page {
+    &.container {
+        padding-top: 20px;
+    }
+
+    .header {
+        display: flex;
+        padding: 0 24px;
+        color: #FFF;
+        font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53";
+        justify-content: space-between;
+        align-items: center;
+
+        .language {
+            display: flex;
+            align-items: center;
+            span {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .main-content {
+        padding: 23px 24px;
+        text-align: center;
+
+        & > div {
+            border-radius: 10px;
+            background-color: #FFF;
+            overflow: hidden;
+        }
+
+        .countdown-container {
+            display: flex;
+            padding-top: 39px;
+            margin-bottom: 19px;
+            justify-content: center;
+
+            & > div {
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                color: #FFF;
+                font-size: 20px;
+                font-family: effrafonabold;
+                border-radius: 4px;
+                background-image: linear-gradient(to bottom, #797979, #444444);
+            }
+
+            .icon {
+                width: 26px;
+                color: rgba(68, 68, 68, 100);
+                background-image: none;
+            }
+        }
+
+        .pay-no-name{
+            line-height: 22px;
+            color: rgba(102, 102, 102, 100);
+            font-size: 12px;
+        }
+        .pay-no{
+            line-height: 32px;
+            color: rgba(51, 51, 51, 100);
+            font-size: 26px;
+            font-family: effrafonabold;
+        }
+
+        .copy-btn{
+            width: 72px;
+            height: 30px;
+            border-radius: 6px;
+            background-color: rgba(0, 71, 204, 1);
+            color: rgba(255, 255, 255, 1);
+            font-size: 14px;
+            outline: none;
+            border: none;
+            &.copy-btn1{
+                margin-top: 8px;
+                margin-bottom: 24px;
+            }
+        }
+
+
+        .infos{
+            text-align: left;
+            background-color: rgba(240, 240, 240, 1);
+            .item{
+                padding: 0 30px;
+                padding-top: 14px;
+                .halfpxline{
+                    margin-top: 14px;
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+                .flex{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .key{
+                    margin-bottom: 5px;
+                    line-height: 14px;
+                    color: rgba(136, 136, 136, 100);
+                    font-size: 12px;
+                }
+                .value{
+                    &.value1{
+                        line-height: 19px;
+                        color: rgba(51, 51, 51, 100);
+                        font-size: 16px;
+                    }
+                    &.value2{
+                        line-height: 24px;
+                        color: rgba(226, 61, 14, 100);
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+        .tips{
+            line-height: 32px;
+            background-color: rgba(240, 240, 240, 1);
+            color: rgba(226, 61, 14, 100);
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .list-container{
+            color: #FFF;
+            background-color: transparent;
+            .list-item .menu{
+                display: flex;
+                padding: 17px 0;
+                line-height: 19px;
+                align-items: center;
+                font-size: 16px;
+                color: rgba(255, 255, 255, 0.8);
+                justify-content: space-between;
+            }
+            .halfpxline{
+                background-color: rgba(255, 255, 255, 0.1);;
+            }
+        }
+    }
+}

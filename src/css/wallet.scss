@@ -1,0 +1,40 @@
+.wallet-detail-page {
+    &.container {
+        padding-top: 20px;
+    }
+
+    .header {
+        display: flex;
+        padding: 0 24px;
+        color: #FFF;
+        font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53";
+        justify-content: space-between;
+        align-items: center;
+
+        .language {
+            display: flex;
+            align-items: center;
+            span {
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .countdown-container {
+        display: flex;
+        justify-content: center;
+
+        & > div {
+            line-height: 40px;
+            text-align: center;
+            color: #FFF;
+            font-size: 16px;
+            font-family: effrafonabold;
+        }
+
+        .icon {
+            width: 26px;
+            background-image: none;
+        }
+    }
+}

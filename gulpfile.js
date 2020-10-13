@@ -27,7 +27,11 @@ gulp.task('js', function () {
         .pipe(webpack({
             devtool: 'source-map',
             entry: {
-                index: ['babel-polyfill', "./src/js/index.js"]
+                index: ['babel-polyfill', "./src/js/index.js"],
+                bankdetail: ["./src/js/bankdetail.js"],
+                bca: ["./src/js/bca.js"],
+                wallet: ["./src/js/wallet.js"],
+                store: ["./src/js/store.js"],
             },
             output: {
                 path: path.resolve(__dirname, "./dist/js"),
