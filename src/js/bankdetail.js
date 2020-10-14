@@ -4,7 +4,7 @@ $(()=>{
     });
 
     //复制卡号
-    var clipboard = new ClipboardJS('.cpoy-btn');
+    let clipboard = new ClipboardJS('.cpoy-btn');
     clipboard.on('success', function(e) {
         alert("复制成功")
         e.clearSelection();

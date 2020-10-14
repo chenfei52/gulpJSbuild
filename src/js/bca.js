@@ -3,18 +3,24 @@ $(()=>{
         history.go(-1);
     });
 
-    //复制卡号
-    var clipboard = new ClipboardJS('.cpoy-btn');
+    //复制
+    let clipboard = new ClipboardJS('.copy-btn');
     clipboard.on('success', function(e) {
         alert("复制成功")
         e.clearSelection();
     });
-
     clipboard.on('error', function(e) {
         alert("复制失败")
     });
-    $(".cpoy-btn").click(function(e){
+
+    $(".copy-btn1").click(function(e){
         $(this).attr("data-clipboard-text",$(".pay-no").text())
+    });
+    $(".copy-btn2").click(function(e){
+        $(this).attr("data-clipboard-text",$(".cpoy-value2").text())
+    });
+    $(".copy-btn3").click(function(e){
+        $(this).attr("data-clipboard-text",$(".cpoy-value3").text())
     });
 
     startTimeCountDown(3678)

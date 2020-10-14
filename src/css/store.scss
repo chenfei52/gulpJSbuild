@@ -20,6 +20,86 @@
         }
     }
 
+
+    .wallet-card-container{
+        margin-top: 14px;
+        padding: 10px 24px;
+    }
+    .wallet-card{
+        width: 100%;
+        height: 238px;
+        background: url(./../img/store.png) no-repeat;
+        background-size: cover;
+        border-radius: 10px;
+        img{
+            width: 57px;
+            height: 40px;
+            margin: 17px 0 11px 18px;
+        }
+        .infos{
+            display: flex;
+            padding: 35px 21px 0 21px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            &>div{
+                width: 50%;
+                &:nth-child(n + 3){
+                    margin-top: 26px;
+                }
+            }
+            .name{
+                line-height: 14px;
+                color: rgba(0, 0, 0, 1);
+                font-size: 12px;
+            }
+            .value{
+                margin-top: 4px;
+                line-height: 24px;
+                color: rgba(226, 61, 14, 100);
+                font-size: 20px;
+                font-family: effrafonabold;
+                &.right{
+                    color: rgba(51, 51, 51, 1);
+                }
+            }
+        }
+    }
+
+    .article-container{
+        padding: 10px 24px;
+        &>div{
+            background-color: #FFF;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+        }
+        .title{
+            padding: 0 20px;
+            line-height: 48px;
+        }
+        .halfpxline{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        .content{
+            padding-bottom: 33px;
+        }
+        ul{
+            margin-top: 17px;
+            padding: 0 20px;
+            line-height: 19px;
+            color: rgba(51, 51, 51, 100);
+            li:before{
+                content: "";
+                display: inline-block;
+                width:6px;
+                height: 6px;
+                margin-right: 9px;
+                border-radius: 50%;
+                background-color: rgba(254, 146, 1, 1);
+                vertical-align: 1px;
+            }
+        }
+    }
+
     .countdown-container {
         display: flex;
         justify-content: center;
